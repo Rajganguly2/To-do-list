@@ -6,8 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const taskPriority = document.getElementById('task-priority');
     const addTaskBtn = document.getElementById('add-task-btn');
     const taskList = document.getElementById('task-list');
-
-    // Load tasks from local storage
+    
     loadTasks();
 
     addTaskBtn.addEventListener('click', addTask);
