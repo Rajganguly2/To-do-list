@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #33ff00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #fffb00;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 700px;
+    text-align: center;
+}
+
+h1 {
+    color: #00796b;
+    margin-bottom: 20px;
+}
+
+.todo-input {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.todo-input input[type="text"] {
+    width: 30%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.todo-input input[type="datetime-local"], 
+.todo-input select {
+    width: 20%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px; /* Add margin to right for some gap */
+}
+
+.todo-input button {
+    width: 15%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #00796b;
+    color: #fff;
+    cursor: pointer;
+}
+
+.todo-input button:hover {
+    background-color: #004d40;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background-color: #f1f1f1;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+li.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+li button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: #f44336;
+    font-size: 18px;
+}
+
+li button:hover {
+    color: #d32f2f;
+}
+
+.task-info {
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.task-category, .task-priority, .start-time, .end-time {
+    margin-left: 10px;
+}
+
+.start-time, .end-time {
+    margin-right: 20px; /* Add margin to right for some gap */
+}
+
+.start-time span, .end-time span {
+    margin-left: 5px; /* Add margin to the left of date-time text */
+}
